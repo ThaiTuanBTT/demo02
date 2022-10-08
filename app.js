@@ -9,6 +9,9 @@ var studentRouter = require('./routes/student')
 var lecturerRouter = require('./routes/lecturer')
     //var usersRouter = require('./routes/users');
 
+var hbs = require('hbs');
+hbs.registerHelper('dateFormat', require('handlebars-dateformat'));
+
 var mongoose = require('mongoose')
 var url =
     'mongodb+srv://tuanbtgch200717:YBYLLOiXkiiYF91q@cluster0.tw2zqn1.mongodb.net/cloud'
